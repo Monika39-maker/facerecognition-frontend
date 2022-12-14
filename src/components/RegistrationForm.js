@@ -9,7 +9,7 @@ export default function RegistrationForm({ handleRouteChange }) {
 
   function handleRegistration(e) {
     e.preventDefault();
-    fetch("http://localhost:8000/register", {
+    fetch("https://hiveudcgebrgnfoerpzt.supabase.co/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

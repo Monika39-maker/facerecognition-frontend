@@ -72,7 +72,7 @@ export default function App() {
       })
       .then((result) => {
         setFaceData(result.outputs[0].data.regions[0].region_info.bounding_box);
-        fetch("http://localhost:8000/entries", {
+        fetch("https://hiveudcgebrgnfoerpzt.supabase.co/entries", {
           method: "put",
           headers: { "Content-Type": "application/json" },
           body: JSON.stringify({
