@@ -9,7 +9,7 @@ export default function RegistrationForm({ handleRouteChange }) {
 
   function handleRegistration(e) {
     e.preventDefault();
-    fetch("https://hiveudcgebrgnfoerpzt.supabase.co/register", {
+    fetch("https://facerecognition-backend.onrender.com/register", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({

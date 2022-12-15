@@ -11,7 +11,7 @@ export default function SignInForm({ handleRouteChange, noOfEntries }) {
   const { loggedInUser, setLoggedInUser } = useContext(UserContext);
   function handleSignIn(e) {
     e.preventDefault();
-    fetch("https://hiveudcgebrgnfoerpzt.supabase.co/signIn", {
+    fetch("https://facerecognition-backend.onrender.com/signIn", {
       method: "post",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({
